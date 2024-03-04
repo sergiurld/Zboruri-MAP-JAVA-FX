@@ -39,7 +39,7 @@ public class Service extends ObservableImplementat {
          */
         List<Ticket> clientTickets = new ArrayList<>();
         System.out.println(client.getUsername());
-        List<Ticket> allTickets = ticketRepo.getAll(); // Replace with your actual method
+        List<Ticket> allTickets = ticketRepo.getAll();
 
         for (Ticket ticket : allTickets) {
             if (ticket.getUsername().equals(client.getUsername())) {
@@ -59,7 +59,7 @@ public class Service extends ObservableImplementat {
          */
         List<Ticket> dateTickets = new ArrayList<>();
 
-        List<Ticket> allTickets = ticketRepo.getAll(); // Replace with your actual method
+        List<Ticket> allTickets = ticketRepo.getAll();
 
         // Specify the target date (24.01.2024) as a LocalDateTime object
         LocalDateTime targetDate = LocalDateTime.of(2024, 1, 24, 6, 0);
