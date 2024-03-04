@@ -17,6 +17,8 @@
         <DatePicker fx:id="datePicker" layoutX="300.0" layoutY="47.0" />
         <Text layoutX="300.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATA PLECARII:" />
         <Text layoutX="27.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FROM:" />
+        <Text layoutX="245" layoutY="105" strokeType="OUTSIDE" strokeWidth="0.0" text="BILETE DISPONIBILE" />
+
         <TableView fx:id="tableView" layoutY="108.0" prefHeight="200.0" prefWidth="600.0">
             <columns>
                 <TableColumn fx:id="departureColoana" prefWidth="130.0" text="DEPARTURE" />
@@ -26,6 +28,7 @@
             </columns>
         </TableView>
         <Button fx:id="buyButton" layoutX="247.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleBuy" text="CUMPARA BILET!" />
+        <Text layoutX="245" layoutY="395" strokeType="OUTSIDE" strokeWidth="0.0" text="BILETE CUMPARATE" />
 
         <TableView fx:id="comenziTableView" layoutY="400.0" prefHeight="200.0" prefWidth="600.0">
             <columns>

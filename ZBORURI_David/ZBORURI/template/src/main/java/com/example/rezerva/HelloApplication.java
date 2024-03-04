@@ -36,6 +36,7 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/views/loginView.fxml"));
         AnchorPane Layout = fxmlLoader.load();
         stage.setScene(new Scene(Layout));
+        stage.setTitle("Login page");
 
         LoginController startController = fxmlLoader.getController();
         startController.setService(service);

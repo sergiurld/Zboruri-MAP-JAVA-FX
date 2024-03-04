@@ -15,6 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.time.LocalDate;
 
 public class LoginController {
@@ -47,5 +48,20 @@ public class LoginController {
         } catch(Exception e) {
             e.printStackTrace();
         }
+    }
+
+
+    public void handleInfo(ActionEvent actionEvent) {
+    try {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/views/infoView.fxml"));
+        Parent root = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setTitle("Info");
+        stage.setScene(new Scene(root));
+        stage.show();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+
     }
 }

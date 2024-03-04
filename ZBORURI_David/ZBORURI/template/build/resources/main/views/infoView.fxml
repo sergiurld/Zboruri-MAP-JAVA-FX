@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="200.0" prefWidth="400.0">
+    <Label layoutX="20" layoutY="20" text="Welcome to Our Airline Reservation System!" />
+
+    <Text layoutX="20" layoutY="60">
+        To login, use a username like "user1".
+    </Text>
+
+
+    <Text layoutX="20" layoutY="100">
+        Follow this steps
+
+    </Text><Text layoutX="20" layoutY="115">
+        - Choose departure and landing locations
+
+
+    </Text>
+    <Text layoutX="20" layoutY="130">
+        - Pick a date from the calendar.
+
+
+    </Text>
+    <Text layoutX="20" layoutY="145">
+        - Press a button to view available flights.
+
+
+    </Text>
+    <Text layoutX="20" layoutY="160">
+        - Purchase a ticket for your selected flight.
+    </Text>
+
+    <Text layoutX="20" layoutY="180">
+        For assistance, please see "README".
+    </Text>
+
+
+</AnchorPane>
