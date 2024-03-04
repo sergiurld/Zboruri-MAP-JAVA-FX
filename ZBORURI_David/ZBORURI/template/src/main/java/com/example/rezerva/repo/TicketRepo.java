@@ -21,6 +21,11 @@ public class TicketRepo implements Repository<Ticket>{
 
     @Override
     public List<Ticket> getAll() {
+        /**
+         * Retrieves a list of all tickets from the database.
+         * @return A list of Ticket objects representing all clients in the database.
+         * @throws exception If an error occurs while retrieving tickets from the database.
+         */
         List<Ticket> all = new ArrayList<>();
         try (Connection connection = DriverManager.getConnection(url, username, passwd);
              PreparedStatement statement = connection.prepareStatement("SELECT * from \"ticket\"");
@@ -42,8 +47,13 @@ public class TicketRepo implements Repository<Ticket>{
     }
 
     public void adauga(Ticket ticket) {
-        //adaugam ticket in baza de date
-
+        /**
+         * Adaugă un obiect de tip Ticket în baza de date.
+         * Metoda inserează un nou rând în tabela "ticket" a bazei de date, folosind informațiile din obiectul Ticket furnizat.
+         * Se utilizează conexiunea la baza de date specificată prin URL, numele de utilizator și parola.
+         * param ticket Obiectul de tip {@code Ticket} care va fi adăugat în baza de date.
+         * throws RuntimeException Dacă apare o eroare la adăugarea unui ticket în baza de date.
+         */
         String sql = "insert into \"ticket\" (username,idflight,data) values (?,?,?)";
 
         try (Connection connection = DriverManager.getConnection(url, username, passwd);

@@ -19,6 +19,11 @@ public class ClientRepo implements Repository<Client>{
 
     @Override
     public List<Client> getAll() {
+        /**
+         * Retrieves a list of all clients from the database.
+         * @return A list of Client objects representing all clients in the database.
+         * @throws exception If an error occurs while retrieving clients from the database.
+         */
         List<Client> all = new ArrayList<>();
         try (Connection connection = DriverManager.getConnection(url, usernamee, passwd);
              PreparedStatement statement = connection.prepareStatement("SELECT * from \"client\"");

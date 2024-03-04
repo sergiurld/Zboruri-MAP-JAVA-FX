@@ -21,6 +21,11 @@ public class FlightRepo implements Repository<Flight>{
 
     @Override
     public List<Flight> getAll() {
+        /**
+         * Retrieves a list of all flights from the database.
+         * @return A list of Flight objects representing all clients in the database.
+         * @throws exception If an error occurs while retrieving flights from the database.
+         */
         List<Flight> all = new ArrayList<>();
         try (Connection connection = DriverManager.getConnection(url, username, passwd);
              PreparedStatement statement = connection.prepareStatement("SELECT * from \"flight\"");
