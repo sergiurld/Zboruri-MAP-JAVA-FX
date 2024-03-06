@@ -5,3 +5,8 @@ Utilizatorul va putea introduce usernameul său, iar la acționarea butonului lo
 Locatiile “from” si “to” se vor selecta folosind doua Combobox-uri, iar data folosind un DatePicker.
 Achiziția se face prin selectarea unui zbor din tabel și acționarea unui buton cumpără.
 Datele sunt stocate in PostgreSQL - PgAdmin.
+Used Concepts
+•	Layered architecture
+•	JavaFX for GUI
+•	Encapsulation, interfaces, streams
+
